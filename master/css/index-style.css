@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* ============================== fonts ========================*/
+
+/* ============================= variables ========================*/
+
+/* ======================================================= */
+/* header */
+header{
+    height: 50px;
+    background-color: #123;
+    display: flex;
+}
+.profile{
+    width: 30%;
+    /* background-color: darkgrey; */
+    text-indent: 20px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: white;
+    font-weight: bolder;
+}
+.title{
+    width: 40%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    /* background-color: darkkhaki; */
+    font-weight: bolder;
+}
+.out{
+    display: flex;
+    width: 30%;
+}
+.out a{
+    width: 50%;
+    display: inline-block;
+    /* background-color: darkmagenta; */
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.out a:hover{
+    text-decoration: underline;
+}
+.out span{
+    width: 50%;
+    display: inline-block;
+    /* background-color: cyan; */
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+/* ============================================================================================ */
+/* =========================================== data =======================================*/
+.data{
+    /* background-color: darkgreen; */
+    min-height: calc(100vh - 100px);
+    display: flex;
+}
+nav{
+    width: 20%;
+    background-color: #125;
+    min-height: 100%;
+}
+nav a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+    text-decoration: none;
+    color: white;    
+}
+nav a:hover{
+    background-color: #124;
+    color: white;
+}
+.page-data{
+    width: 80%;
+    /* background-color: darkgoldenrod; */
+    min-height: 100%;
+}
+/* ========================= footer ================================================= */
+footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #123;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+/* ============= treat doc page */
+.page-title{
+    height: 50px;
+    text-align: center;
+    /* background-color: chocolate ; */
+    line-height: 50px;
+    font-family: sans-serif ;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #125;   
+}
+.all-data table{
+    width: 90%;
+    margin: 2% auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: solid 1px #eee;
+}
+.all-data th,td{
+    height: 40px;
+    line-height: 40px;
+    border: solid 1px #eee;
+    text-align: center;
+}
+.data-btns{
+    margin: 2% auto;
+    height: 100px;
+    /* background-color: tomato; */
+    text-align: center;
+    padding-top: 30px;
+}
+.data-btns a{
+    background-color: #125;
+    color: white;
+    text-decoration: none;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0% 15px ;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 5px;
+}
+/* =========================  form ========================= */
+.all-data form{
+    width: 50%;
+    margin: 1% auto;
+}
+.all-data input:not(.no){
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 2%;
+    outline: 0;
+    border: solid 1px #ddd;
+    font-size: 18px;
+    color: darkcyan ;
+    font-family : sans-serif;
+    font-weight : bolder;
+    box-shadow: 1px 1px 3px black;
+}
+.all-data input[type="submit"]:not(.sub-a){
+    background-color: #eee;
+    color: #125;
+    font-size: 25px;
+    font-family : sans-serif;
+    font-weight : bolder;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+input::placeholder{
+    color: #125;
+    opacity: .5;
+}
+.all-data input[type="submit"]:hover:not(.sub-a){
+    background-color: #ddd;
+}
+.error{
+    color : red;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+/* ===================================================== */
+select{
+    display: block;
+    width: 100%;
+    margin: 2% auto;
+    height: 50px;
+    cursor: pointer;
+    outline: 0;
+    border: solid 1px #ddd;
+    box-shadow: 1px 1px 3px black;
+    color: #125;
+    font-size: 18px;
+    text-align: center;
+}
+option{
+    height: 50px;
+    cursor: pointer;
+}
+.all-data .big-table{
+    width: 99%;
+}
+.all-data .big-table th,td{
+    font-size: 11px;
+    padding: 0;
+    word-break: break-all;
+}
+.all-data span{
+    font-size: 18px;
+    color: #125;
+    font-weight: bolder;
+    font-family: sans-serif;
+    display: block;
+}
+.all-data .no{
+    transform: scale(1.3,1.3);
+}
+label{
+    font-size:18px;
+    color: #125;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.all-data  .sub-a{
+    background-color: #125;
+    color: white;
+    text-decoration: none;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0% 15px ;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 5px;
+    border: none;
+    transform:scale(1,1);
+    outline: 0;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+    line-height: 40px;
+}
+/* ============================== gallery ====================== */
+.gallery img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 2%;
+    width: 70%;
+    row-gap: 2%;
+    margin: 2% auto;
+}
+.gallery > div{
+    border: solid 1px #125;
+}
+.item-data{
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 14px;
+    text-align: center;
+    background-color: #125;
+    color: white;
+}
+.item-name{
+    width: 60%;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+.item-price{
+    width: 40%;
+    font-size: 14px;
+}
+/* ================== invoice ============================ */
+.all-data .inv{
+    width: 99%;
+    /* table-layout: auto; */
+    border: none;
+}
+.all-data .inv input {
+    transform: scale(1,1);
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: none;
+    height: 25px;
+    outline: 0;
+    font-size: 13px;
+    text-align: left;
+    border: none;
+
+}
+.all-data .inv th,td{
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+}
+.all-data .inv select {
+    transform: scale(1,1);
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    height: 25px;
+    font-size: 12px;
+    box-shadow: none;
+    outline: 0;
+    border: solid 1px #eee;
+
+}
+.all-data .inv  .detail{
+    border: solid 1px #eee;
+}
