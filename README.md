@@ -1,1 +1,1 @@
-# PHP MySQL hospital site
+# PHP hospital site
